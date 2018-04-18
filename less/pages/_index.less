@@ -1,0 +1,241 @@
+.home {
+  .banner {
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    .carousel-item {
+      height: 380px;
+      background-color: #edf0f1;
+      background: url("") no-repeat center center;
+      background-size: cover;
+      padding-left: 150px;
+    }
+    .title {
+      padding-top: 90px;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 48px;
+      b {
+        font-weight: 500;
+        font-size: 60px;
+      }
+    }
+    .text {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 45px;
+    }
+    .button {
+      color: white;
+      background-color: @blue;
+      padding: 19px 20px;
+      font-size: 18px;
+      font-weight: 500;
+      min-width: 220px;
+      margin-top: 40px;
+      &:hover {
+        background-color: darken(@blue, 10%);
+      }
+    }
+    .container {
+      position: relative;
+    }
+    .carousel-indicators {
+      position: absolute;
+      bottom: 25px;
+      right: 0;
+      left: auto;
+      margin: 0;
+      .fit-content();
+      li {
+        .size(13px);
+        background-color: #fafbfc;
+        min-width: 13px;
+        cursor: pointer;
+        .border-radius(50%);
+        border: 2px solid @dark;
+        transition: all .2s;
+        &.active {
+          .size(15px);
+          min-width: 15px;
+          border-width: 3px;
+        }
+      }
+    }
+  }
+
+  .news {
+    position: relative;
+    .share-vk{
+      position: absolute;
+      right: 15px;
+      top: 70px;
+    }
+    article {
+      width: 30%;
+      margin-bottom: 70px;
+    }
+    .big {
+      width: 100%;
+      margin-bottom: 0;
+      .photo {
+        .size(390px, 200px);
+        min-width: 390px;
+        display: block;
+        margin: 0;
+      }
+    }
+    .photo {
+      .size(100%, 125px);
+      margin-bottom: 13px;
+      background: url("") no-repeat center center;
+      background-size: 100% 100%;
+    }
+    .content {
+      padding-left: 20px;
+    }
+    .text {
+      font-size: 16px;
+      margin-top: 13px;
+    }
+    .date {
+      margin-top: 13px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+
+  .banks-articles {
+    .section-title {
+      margin-left: auto;
+      margin-right: auto;
+      .fit-content();
+      display: block;
+    }
+    .popover {
+      background-color: #ebeff0;
+      .arrow:after {
+        border-right-color: #ebeff0;
+      }
+    }
+  }
+
+  .questions {
+    background: url("../img/questions.png") no-repeat center;
+    background-size: cover;
+    padding-bottom: 50px;
+    .section-title {
+      color: white;
+    }
+    .column {
+      width: 30%;
+    }
+    article {
+      background-color: white;
+      .box-shadow(0 1px 15px rgba(77, 89, 93, 0.3));
+      .border-radius(8px);
+      margin-bottom: 20px;
+      min-height: 115px;
+      padding: 17px;
+      a {
+        display: flex;
+      }
+      .photo {
+        .size(80px);
+        min-width: 80px;
+        background: url("") no-repeat center center;
+        background-size: 100% 100%;
+        margin-right: 15px;
+      }
+      .title {
+        font-size: 16px;
+        color: @cyan;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .home {
+    .questions {
+      .column {
+        width: 33%;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .home {
+    .questions {
+      .column {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    .banner {
+      .carousel-item {
+        min-height: 500px;
+        background-image: url("none") !important;
+        padding: 0;
+        text-align: center;
+      }
+      .carousel-indicators {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+      }
+    }
+    .news {
+      .share-vk{
+        top: 30px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        .fit-content();
+      }
+      text-align: center;
+      .big {
+        .photo {
+          margin: 0 auto;
+          min-width: unset;
+          width: auto;
+          max-width: 390px;
+        }
+        .content {
+          padding: 15px 0 0;
+        }
+        a{
+          max-width: 100%;
+        }
+      }
+      article {
+        width: 48%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .home {
+    .news {
+      article {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        .photo{
+          max-width: 270px;
+          margin: 0 auto 15px;
+        }
+      }
+    }
+    .questions{
+      .section-title{
+        width: auto;
+      }
+    }
+  }
+}

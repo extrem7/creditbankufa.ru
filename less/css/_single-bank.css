@@ -1,0 +1,9 @@
+.single-bank .bank-item .types li a {
+  display: block;
+  background-color: #eff3f3;
+  padding: 12px 15px;
+  min-width: 300px;
+}
+.single-bank .bank-item .types li a:hover {
+  background-color: #e1e8e8;
+}

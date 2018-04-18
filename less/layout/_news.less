@@ -1,0 +1,141 @@
+.page-template-archive, .archive, .search-results {
+  .news-item {
+    display: block;
+    padding: 25px 30px 20px 25px;
+    .title {
+      font-size: 32px;
+    }
+    img {
+      margin: 15px 0;
+      max-width: 100%;
+    }
+    p {
+      font-size: 16px;
+    }
+    .stars {
+      pointer-events: none;
+      margin-bottom: 0;
+    }
+    .reviews-count {
+      text-align: right;
+      margin-top: 15px;
+    }
+  }
+}
+
+.gdrts-rating-block {
+  .gdrts-rating-text, .gdrts-rating-user, .gdrts-rating-thanks {
+    display: none;
+  }
+}
+
+.hide-form {
+  padding-top: 35px;
+  cite {
+    margin-right: 5px;
+  }
+  .comment {
+    .box-shadow(0 1px 35px rgba(209, 218, 220, 0.9));
+    .border-radius(8px);
+    padding: 25px 30px 20px 25px;
+    margin: 15px 0;
+    .comment-meta {
+      margin: 10px 0;
+    }
+    .reply a {
+      .button();
+      color: #444;
+      font-size: 14px;
+      font-weight: 500;
+      background-color: #aeaeae;
+      .border-radius(3px);
+      .fit-content();
+      margin: 15px 0 0 auto;
+      min-width: 120px;
+      padding: 5px 15px;
+      display: table;
+      cursor: pointer;
+      transition: all .2s;
+      &:hover {
+        background-color: #c6c6c6;
+      }
+    }
+  }
+  form, h3 {
+    display: none;
+  }
+}
+
+.write-comment, .comment-form {
+  margin-bottom: 30px;
+  label {
+    font-size: 14px;
+  }
+  .input-block {
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  input, textarea {
+    border: 1px solid #b2b2b2;
+    .border-radius(3px);
+  }
+  label {
+    min-width: 65px;
+  }
+  input {
+    .size(138px, 30px);
+    text-indent: 10px;
+    margin-top: 15px;
+    // margin-left: 20px;
+  }
+  .submit {
+    width: auto;
+    text-indent: 0;
+  }
+  .stars {
+    margin-left: 65px;
+  }
+  .star {
+    &:hover {
+      cursor: pointer;
+      background-image: url("../img/star-active.png");
+    }
+  }
+  textarea {
+    height: 100px;
+    padding: 10px;
+    width: 100%;
+    display: block;
+  }
+  .left {
+    margin-right: 30px;
+    min-width: 290px;
+  }
+  .right {
+    width: 100%;
+    label {
+      display: block;
+      margin-bottom: 18px;
+    }
+  }
+  .submit {
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #aeaeae;
+    .border-radius(3px);
+    margin: 15px 0 0 auto;
+    min-width: 120px;
+    padding: 5px 15px;
+    display: block;
+    cursor: pointer;
+    transition: all .2s;
+    &:hover {
+      background-color: #c6c6c6;
+    }
+  }
+  .comment-form-url {
+    display: none;
+  }
+}

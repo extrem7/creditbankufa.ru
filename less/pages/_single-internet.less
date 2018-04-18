@@ -1,0 +1,107 @@
+.single-internet-bank {
+  .bank-item {
+    margin: 65px 0 0;
+    padding-bottom: 35px;
+    .head {
+      .button {
+        position: unset;
+        color: #444;
+        font-size: 12px;
+        font-weight: 400;
+        background-color: #d5dadb;
+        .border-radius(5px);
+        min-width: 90px;
+        padding: 11px 15px;
+        display: block;
+        cursor: pointer;
+        &:hover {
+          background-color: #c6c6c6;
+        }
+      }
+    }
+    .count-today {
+      font-weight: 500;
+      display: flex;
+      .circle {
+        .size(55px);
+        .flex-center();
+        .border-radius(50%);
+        color: #565a5c;
+        font-size: 24px;
+        font-weight: 700;
+        border: 5px solid #6eb1e1;
+        margin-right: 15px;
+      }
+    }
+    hr {
+      border-top: 1px solid @gray;
+      margin: 25px 0 35px;
+    }
+    .foot .button {
+      position: unset;
+      background-color: @green;
+      min-width: 140px;
+      padding: 15px 15px;
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      &:hover {
+        background-color: darken(@green, 5%);
+      }
+    }
+    .women {
+      max-width: 120px;
+      position: absolute;
+      bottom: 0px;
+      right: 35%;
+    }
+  }
+  .section-title {
+
+  }
+}
+
+.internet-item {
+  padding: 40px 30px;
+  margin: 0;
+  p {
+    color: #5e5e5e;
+    font-size: 14px;
+  }
+  .title {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+  }
+  img {
+    margin: 0 auto 30px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .single-internet-bank {
+    .bank-item {
+      .women {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .single-internet-bank {
+    .bank-item {
+      .foot {
+        flex-direction: column;
+      }
+      .button {
+        margin-top: 15px;
+      }
+    }
+    .internet-item {
+      padding: 25px 15px;
+    }
+  }
+}

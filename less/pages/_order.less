@@ -1,0 +1,154 @@
+.order {
+  .box-shadow(0 1px 35px rgba(209, 218, 220, 0.9));
+  .border-radius(8px);
+  padding: 35px 30px;
+  margin-bottom: 30px;
+  .head {
+    font-weight: 500;
+    text-align: center;
+    line-height: 18px;
+    .icon {
+      min-height: 75px;
+    }
+  }
+  .hr-more {
+    margin: 25px 0 45px;
+  }
+  .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+  /*
+  .input-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    padding-right: 65px;
+    label {
+      font-weight: 500;
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
+    input:not([type=submit]), select {
+      .size(500px, 45px);
+      border: 1px solid #dad9d9;
+      text-indent: 10px;
+      .border-radius(4px);
+      color: #655a65;
+      font-family: MuseoSansCyrl, sans-serif;
+      font-size: 14px;
+      &::-webkit-input-placeholder {
+        color: #a59aa5;
+      }
+      &:-moz-placeholder {
+        color: #a59aa5;
+      }
+      &::-moz-placeholder {
+        color: #a59aa5;
+      }
+      &:-ms-input-placeholder {
+        color: #a59aa5;
+      }
+    }
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      outline: none !important;
+    }
+    .select {
+      position: relative;
+      &:after {
+        .size(11px, 5px);
+        content: '';
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        background: url("../img/select-icon.png");
+        pointer-events: none;
+      }
+    }
+  }
+  .button {
+    display: block;
+    background-color: #84be20;
+    color: #fefeff;
+    padding: 10px 15px;
+    min-width: 220px;
+    margin: 30px auto 20px;
+  }
+  .personal-data {
+    cursor: pointer;
+    margin: 0 auto;
+    .fit-content();
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #676767;
+  }
+  input[type=checkbox] + label {
+    margin-right: 10px;
+  }
+  */
+  #FilkosForms .FilkosForms_steps {
+    box-shadow: none !important;
+    border: none !important;
+  }
+  #FilkosForms .FilkosForms_form button.back{
+    width: 70px;
+  }
+}
+
+@media (max-width: 1396px) {
+  .order {
+    .input-block {
+      margin: 0 -15px 15px -35px;
+      padding-right: 0;
+      text-align: right;
+      input, select {
+        min-width: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .order {
+    .input-block {
+      margin: 0 0 15px;
+      input, select {
+        min-width: 350px;
+        width: 350px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .order {
+    .head {
+      .block {
+        margin-bottom: 15px;
+      }
+    }
+    .input-block {
+      flex-direction: column;
+      label {
+        margin-bottom: 5px;
+      }
+      .select {
+        width: 100%;
+      }
+      input, select {
+        min-width: unset !important;
+        width: 100% !important;
+      }
+    }
+    .personal-data {
+      width: auto;
+      text-align: center;
+    }
+  }
+}

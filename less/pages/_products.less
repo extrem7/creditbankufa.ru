@@ -1,0 +1,89 @@
+.post-type-archive-credit, .tax-type {
+  .bank-item {
+    margin: 0 0 30px;
+    padding-bottom: 35px;
+    .head {
+      .button {
+        position: unset;
+        color: #444;
+        font-size: 12px;
+        font-weight: 400;
+        background-color: #d5dadb;
+        .border-radius(5px);
+        min-width: 90px;
+        padding: 11px 15px;
+        display: block;
+        cursor: pointer;
+        &:hover {
+          background-color: #c6c6c6;
+        }
+      }
+    }
+    .count-today {
+      font-weight: 500;
+      display: flex;
+      .circle {
+        .size(55px);
+        .flex-center();
+        .border-radius(50%);
+        color: #565a5c;
+        font-size: 24px;
+        font-weight: 700;
+        border: 5px solid #6eb1e1;
+        margin-right: 15px;
+      }
+    }
+    hr {
+      border-top: 1px solid @gray;
+      margin: 25px 0 35px;
+    }
+    .foot .button {
+      position: unset;
+      background-color: @green;
+      min-width: 140px;
+      padding: 15px 15px;
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      &:hover {
+        background-color: darken(@green, 5%);
+      }
+    }
+    .women {
+      width: 166px;
+      position: absolute;
+      bottom: 10px;
+      right: 30%;
+    }
+  }
+  .bank-item:last-child {
+    margin-bottom: 70px;
+  }
+  .pagination {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .post-type-archive-credit, .tax-type {
+    .bank-item {
+      .women {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .post-type-archive-credit, .tax-type {
+    .bank-item {
+      .foot {
+        flex-direction: column;
+      }
+      .button {
+        margin-top: 15px;
+      }
+    }
+  }
+}
